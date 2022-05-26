@@ -10,6 +10,8 @@
               :isNight="isNight"
               :currentWeather="currentWeather"
               />
+              <HourlyWeather 
+              :forecast="forecast"/>
           </div>
       </div>
   </div>
@@ -19,12 +21,13 @@
 import axios from "axios";
 import db from "../firebase/firebaseinit";
 import CurrentWeather from "@/components/CurrentWeather.vue";
+import HourlyWeather from "@/components/HourlyWeather.vue"
 export default {
     name: "Weather",
     props: ['APIkey', 'isDay', 'isNight'],
     components: {
     CurrentWeather,
-    CurrentWeather
+    HourlyWeather,
 },
     data() {
         return {
@@ -107,6 +110,7 @@ export default {
     transition: 500ms ease;
     width: 100%;
     height: 100%;
+    overflow: scroll;
 
     .weather-wrap {
         overflow: hidden;

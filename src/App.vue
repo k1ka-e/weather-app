@@ -127,20 +127,20 @@ export default {
 
 /* scroll bar
 ================ */
-::-webkit-scrollbar {
-  width: 12px;
-}
+// ::-webkit-scrollbar {
+//   width: 12px;
+// }
 
-::-webkit-scrollbar-track {
-  background: #545455;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 2) inset;
-}
+// ::-webkit-scrollbar-track {
+//   background: #545455;
+//   box-shadow: 0 0 2px rgba(0, 0, 0, 2) inset;
+// }
 
-::-webkit-scrollbar-thumb {
-  background: #313640;
-  border-radius: 8px;
-  border: 3px solid #9c9c9c;
-}
+// ::-webkit-scrollbar-thumb {
+//   background: #313640;
+//   border-radius: 8px;
+//   border: 3px solid #9c9c9c;
+// }
 
 
 .day {
