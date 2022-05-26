@@ -15,6 +15,8 @@
     />
 
     <router-view 
+    :isDay="isDay"
+    :isNight="isNight"
     v-bind:cities="cities" 
     v-bind:edit="edit" 
     :APIkey="APIkey"
@@ -138,6 +140,23 @@ export default {
   background: #313640;
   border-radius: 8px;
   border: 3px solid #9c9c9c;
+}
+
+
+.day {
+    transition: 500ms ease all;
+    background-color: rgb(59, 150, 249);
+    box-shadow: 0 4px 6px -1px 
+    rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.night {
+    transition: 500ms ease all;
+    background-color: rgb(20, 42, 95);
+    box-shadow: 0 4px 6px -1px 
+    rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .main {
