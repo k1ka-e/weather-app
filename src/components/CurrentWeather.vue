@@ -30,9 +30,11 @@
 </template>
 
 <script>
+
 export default {
   name: "CurrentWeather",
   props: ["isDay", "isNight", "currentWeather"],
+
 };
 </script>
 
@@ -76,6 +78,7 @@ export default {
         .high,
         .low {
             display: flex;
+            
             span {
                 margin-top: 8px;
             }
