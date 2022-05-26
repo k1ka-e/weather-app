@@ -1,5 +1,9 @@
 # weather-app
 
+приложение погода на фреймворке vue
+
+https://weather-app-1903.netlify.app/
+
 ## Project setup
 ```
 npm install
